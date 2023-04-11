@@ -26,7 +26,6 @@ public class LoginController {
 	public String first(Model model) {
 		return "login"; // jspファイル名
 	}
-
 	/**
 	 * ログイン処理
 	 *
