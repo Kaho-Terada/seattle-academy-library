@@ -38,7 +38,6 @@ public class BooksService {
 
 		return getedBookList;
 	}
-
 	/**
 	 * 書籍IDに紐づく書籍詳細情報を取得する
 	 *
@@ -52,7 +51,6 @@ public class BooksService {
 
 		return bookDetailsInfo;
 	}
-
 	/**
 	 * 書籍を登録する
 	 *
@@ -68,7 +66,6 @@ public class BooksService {
 				bookInfo.getThumbnailUrl(), bookInfo.getIsbn(), bookInfo.getDescription());
 		return bookId;
 	}
-
 	/**
 	 * 書籍を削除する
 	 * 
@@ -79,7 +76,6 @@ public class BooksService {
 		String sql = "DELETE FROM books where id=?";
 		jdbcTemplate.update(sql, bookId);
 	}
-
 	/**
 	 * 書籍情報を更新する
 	 * 
