@@ -52,4 +52,8 @@ public class UsersService {
 		}
 	}
 
+	public void resetUserInfo(String email, String password) {
+		String sql = "UPDATE users SET password=? WHERE email=?";
+		jdbcTemplate.update(sql, password, email);
+	}
 }
